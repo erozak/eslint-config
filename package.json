@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-erozak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erozak/eslint-config.git"
+  },
+  "author": "erozak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erozak/eslint-config/issues"
+  },
+  "homepage": "https://github.com/erozak/eslint-config#readme",
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}
