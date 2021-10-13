@@ -243,7 +243,7 @@ const config = {
     'no-void': 'error',
     // 'no-warning-comments': 'off',
     'no-with': 'error',
-    'one-var': ['error', 'consecutive'],
+    'one-var': ['error', 'never'],
     // 'object-shorthand': 'off',
     // 'one-var-declaration-per-line': 'off',
     // 'operator-assignment': 'off',
