@@ -4,10 +4,10 @@
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-    /**
+  /**
     * @see {@link http://eslint.org/docs/rules/}
     **/
-   rules: {
+  rules: {
 
     /**
     * Possible Problems
@@ -69,7 +69,7 @@ const config = {
         functions: false,
         // classes: true,
         // variables: true,
-      }
+      },
     ],
     'no-useless-backreference': 'error',
     // 'require-atomic-updates': 'off',
@@ -85,7 +85,7 @@ const config = {
       {
         // setWithoutGet: false,
         getWithoutSet: true,
-      }
+      },
     ],
     'arrow-body-style': [
       'error',
@@ -95,7 +95,7 @@ const config = {
       },
     ],
     //  'block-scoped-var': 'off',
-    'camelcase': [
+    camelcase: [
       'error',
       {
         // properties: 'always',
@@ -103,17 +103,14 @@ const config = {
         // ignoreImports: false,
         ignoreGlobals: true,
         // allow: [],
-      }
+      },
     ],
     //  'capitalized-comments': 'off',
     //  'class-methods-use-this': 'off',
     //  'complexity': 'off',
     //  'consistent-return': 'off',
     //  'consistent-this': 'off',
-    'curly': [
-      'error',
-      'multi-line',
-    ],
+    curly: ['error', 'multi-line'],
     'default-case': 'error',
     'default-case-last': 'error',
     //  'default-param-last': 'off',
@@ -122,14 +119,14 @@ const config = {
       {
         allowKeywords: false,
       //  allowPattern: '',
-      }
+      },
     ],
-    'eqeqeq': [
+    eqeqeq: [
       'error',
       'always',
       {
-      null: 'ignore'
-      }
+        'null': 'ignore',
+      },
     ],
     //  'func-name-matching': 'off',
     //  'func-names': 'off',
@@ -206,16 +203,16 @@ const config = {
     //  'no-restricted-properties': 'off',
     //  'no-restricted-syntax': 'off',
     //  'no-return-assign': 'off',
-     'no-return-await': 'error',
+    'no-return-await': 'error',
     //  'no-script-url': 'off',
-     'no-sequences': 'error',
+    'no-sequences': 'error',
     'no-shadow': [
       'error',
       {
         builtinGlobals: true,
         // hoist: 'functions',
         // allow: [],
-      }
+      },
     ],
     'no-shadow-restricted-names': 'error',
     // 'no-ternary': 'off',
@@ -224,12 +221,15 @@ const config = {
     // 'no-undefined': 'off',
     'no-underscore-dangle': 'error',
     'no-unneeded-ternary': 'error',
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: true,
-      // allowTernary: false,
-      allowTaggedTemplates: true,
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: true,
+        // allowTernary: false,
+        allowTaggedTemplates: true,
       // enforceForJSX: false,
-    }],
+      },
+    ],
     'no-unused-labels': 'error',
     // 'no-useless-call': 'off',
     'no-useless-catch': 'error',
@@ -243,10 +243,7 @@ const config = {
     'no-void': 'error',
     // 'no-warning-comments': 'off',
     'no-with': 'error',
-    'one-var': [
-      'error',
-      'consecutive'
-    ],
+    'one-var': ['error', 'consecutive'],
     // 'object-shorthand': 'off',
     // 'one-var-declaration-per-line': 'off',
     // 'operator-assignment': 'off',
@@ -255,7 +252,7 @@ const config = {
       {
         // allowNamedFunctions: false,
         // allowUnboundThis: true,
-      }
+      },
     ],
     'prefer-const': 'error',
     // 'prefer-destructuring': 'off',
@@ -268,7 +265,9 @@ const config = {
     // 'prefer-rest-params': 'off',
     // 'prefer-spread': 'off',
     // 'prefer-template': 'off',
-    // 'quote-props': 'off',
+    'quote-props': [
+      'error', 'as-needed', { keywords: true, numbers: true },
+    ],
     // 'radix': 'off'
     // 'require-await': 'off',
     // 'require-unicode-regexp': 'off',
@@ -291,37 +290,31 @@ const config = {
       {
         multiline: true,
         minItems: 3,
-      }
+      },
     ],
-    'array-bracket-spacing': [
-      'error',
-      'never',
-    ],
+    'array-bracket-spacing': ['error', 'never'],
     'array-element-newline': [
       'error',
       {
         multiline: true,
         // minItems: null,
-      }
+      },
     ],
     'arrow-parens': [
       'error',
       'as-needed',
       {
         requireForBlockBody: false,
-      }
+      },
     ],
     'arrow-spacing': [
       'error',
       {
         before: true,
         after: true,
-      }
+      },
     ],
-    'block-spacing': [
-      'error',
-      'always',
-    ],
+    'block-spacing': ['error', 'always'],
     'brace-style': [
       'error',
       'stroustrup',
@@ -337,7 +330,7 @@ const config = {
         imports: 'always-multiline',
         exports: 'always-multiline',
         functions: 'always-multiline',
-      }
+      },
     ],
     'comma-spacing': [
       'error',
@@ -346,43 +339,16 @@ const config = {
         after: true,
       },
     ],
-    'comma-style': [
-      'error',
-      'last',
-    ],
-    'computed-property-spacing': [
-      'error',
-      'never',
-    ],
-    'dot-location': [
-      'error',
-      'property',
-    ],
-    'eol-last': [
-      'off',
-      'always',
-    ],
-    'func-call-spacing': [
-      'error',
-      'never',
-    ],
-    'function-call-argument-newline': [
-      'error',
-      'consistent',
-    ],
-    'function-paren-newline': [
-      'error',
-      'consistent',
-    ],
-    'generator-star-spacing': [
-      'error',
-      'after',
-    ],
-    'implicit-arrow-linebreak': [
-      'error',
-      'beside',
-    ],
-    'indent': [
+    'comma-style': ['error', 'last'],
+    'computed-property-spacing': ['error', 'never'],
+    'dot-location': ['error', 'property'],
+    'eol-last': ['off', 'always'],
+    'func-call-spacing': ['error', 'never'],
+    'function-call-argument-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'consistent'],
+    'generator-star-spacing': ['error', 'after'],
+    'implicit-arrow-linebreak': ['error', 'beside'],
+    indent: [
       'error',
       2,
       {
@@ -390,12 +356,14 @@ const config = {
         VariableDeclarator: 'first',
         outerIIFEBody: 1,
         MemberExpression: 1,
-        FunctionDeclaration: 1,
+        FunctionDeclaration: {
+          parameters: 'first',
+        },
         FunctionExpression: {
           parameters: 'first',
         },
         CallExpression: {
-          arguments: 'first'
+          arguments: 'first',
         },
         ArrayExpression: 'first',
         ObjectExpression: 'first',
@@ -403,9 +371,10 @@ const config = {
         flatTernaryExpressions: false,
         offsetTernaryExpressions: false,
         ignoreComments: false,
-      }
+        ignoredNodes: [],
+      },
     ],
-    'jsx-quotes': 'prefer-double',
+    'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': [
       'error',
       {
@@ -417,12 +386,7 @@ const config = {
           beforeColon: false,
           afterColon: true,
         },
-        align: {
-          "beforeColon": false,
-          "afterColon": true,
-          "on": "value"
-      }
-      }
+      },
     ],
     'keyword-spacing': [
       'error',
@@ -432,10 +396,7 @@ const config = {
       },
     ],
     // 'line-comment-position': 'off',
-    'linebreak-style': [
-      'error',
-      'unix',
-    ],
+    'linebreak-style': ['error', 'unix'],
     'lines-around-comment': [
       'error',
       {
@@ -451,14 +412,14 @@ const config = {
         allowArrayEnd: true,
         allowClassStart: true,
         allowClassEnd: true,
-      }
+      },
     ],
     'lines-between-class-members': [
       'off',
       'always',
       {
         exceptAfterSingleLine: true,
-      }
+      },
     ],
     'max-len': [
       'error',
@@ -473,7 +434,7 @@ const config = {
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
-      }
+      },
     ],
     'max-statements-per-line': [
       'error',
@@ -481,19 +442,13 @@ const config = {
         max: 1,
       },
     ],
-    'multiline-ternary': [
-      'error',
-      'always-multiline',
-    ],
-    'new-parens': [
-      'error',
-      'always',
-    ],
+    'multiline-ternary': ['error', 'always-multiline'],
+    'new-parens': ['error', 'always'],
     'newline-per-chained-call': [
       'error',
       {
         ignoreChainWithDepth: 1,
-      }
+      },
     ],
     'no-extra-parens': [
       'error',
@@ -518,8 +473,8 @@ const config = {
           BinaryExpression: false,
           VariableDeclarator: false,
           ImportDeclaration: false,
-        }
-      }
+        },
+      },
     ],
     'no-multiple-empty-lines': [
       'error',
@@ -535,11 +490,9 @@ const config = {
       {
         // skipBlankLines: false,
         // ignoreComments: false,
-      }
+      },
     ],
-    'no-whitespace-before-property': [
-      'error',
-    ],
+    'no-whitespace-before-property': ['error'],
     // 'nonblock-statement-body-position': 'off',
     'object-curly-newline': [
       'error',
@@ -553,13 +506,13 @@ const config = {
       {
         arraysInObjects: false,
         objectsInObjects: true,
-      }
+      },
     ],
     'object-property-newline': [
       'error',
       {
         allowAllPropertiesOnSameLine: true,
-      }
+      },
     ],
     'operator-linebreak': [
       'error',
@@ -568,97 +521,67 @@ const config = {
         overrides: {
           '&&': 'after',
           '||': 'after',
-        }
-      }
+        },
+      },
     ],
-    'padded-blocks': [
-      'error',
-      'never',
-    ],
+    'padded-blocks': ['error', 'never'],
     // 'padding-line-between-statements': 'off',
-    'quotes': [
+    quotes: [
       'error',
       'single',
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
-      }
+      },
     ],
-    'rest-spread-spacing': [
-      'error',
-      'never',
-    ],
-    'semi': [
-      'error',
-      'always',
-    ],
+    'rest-spread-spacing': ['error', 'never'],
+    semi: ['error', 'always'],
     'semi-spacing': [
       'error',
       {
         before: false,
         after: true,
-      }
+      },
     ],
-    'semi-style': [
-      'error',
-      'last',
-    ],
-    'space-before-blocks': [
-      'error',
-      'always',
-    ],
+    'semi-style': ['error', 'last'],
+    'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': [
       'error',
       {
         anonymous: 'always',
         named: 'never',
         asyncArrow: 'always',
-      }
+      },
     ],
-    'space-in-parens': [
-      'error',
-      'never',
-    ],
+    'space-in-parens': ['error', 'never'],
     'space-infix-ops': ['error'],
     'space-unary-ops': [
       'error',
       {
         words: true,
-        nowords: false,
-      }
+        nonwords: false,
+      },
     ],
     'switch-colon-spacing': [
       'error',
       {
         before: false,
         after: true,
-      }
+      },
     ],
-    'template-curly-spacing': [
-      'error',
-      'never',
-    ],
-    'template-tag-spacing': [
-      'error',
-      'never',
-    ],
-    'unicode-bom': [
-      'error',
-      'never',
-    ],
+    'template-curly-spacing': ['error', 'never'],
+    'template-tag-spacing': ['error', 'never'],
+    'unicode-bom': ['error', 'never'],
     'wrap-iife': [
       'error',
       'inside',
       {
         functionPrototypeMethods: true,
-      }
+      },
     ],
     'wrap-regex': 'off',
-    'yield-star-spacing': [
-      'error',
-      'after',
-    ],
-   },
+    'yield-star-spacing': ['error', 'after'],
+  },
 };
 
 module.exports = config;
