@@ -265,9 +265,7 @@ const config = {
     // 'prefer-rest-params': 'off',
     // 'prefer-spread': 'off',
     // 'prefer-template': 'off',
-    'quote-props': [
-      'error', 'as-needed', { keywords: false, numbers: true },
-    ],
+    'quote-props': ['error', 'as-needed', { keywords: false, numbers: true }],
     // 'radix': 'off'
     // 'require-await': 'off',
     // 'require-unicode-regexp': 'off',
@@ -285,21 +283,9 @@ const config = {
      * Layout & Formatting
      */
 
-    'array-bracket-newline': [
-      'error',
-      {
-        multiline: true,
-        minItems: 3,
-      },
-    ],
+    'array-bracket-newline': ['error', { multiline: true }],
     'array-bracket-spacing': ['error', 'never'],
-    'array-element-newline': [
-      'error',
-      {
-        multiline: true,
-        // minItems: null,
-      },
-    ],
+    'array-element-newline': ['error', 'consistent'],
     'arrow-parens': [
       'error',
       'as-needed',
