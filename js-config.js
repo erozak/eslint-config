@@ -125,7 +125,7 @@ const config = {
       'error',
       'always',
       {
-        'null': 'ignore',
+        null: 'ignore',
       },
     ],
     //  'func-name-matching': 'off',
@@ -266,7 +266,7 @@ const config = {
     // 'prefer-spread': 'off',
     // 'prefer-template': 'off',
     'quote-props': [
-      'error', 'as-needed', { keywords: true, numbers: true },
+      'error', 'as-needed', { keywords: false, numbers: true },
     ],
     // 'radix': 'off'
     // 'require-await': 'off',
