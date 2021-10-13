@@ -67,8 +67,8 @@ const config = {
       'error',
       {
         functions: false,
-        // classes: true,
-        // variables: true,
+        classes: true,
+        variables: true,
       },
     ],
     'no-useless-backreference': 'error',
