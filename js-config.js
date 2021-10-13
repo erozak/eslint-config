@@ -288,9 +288,8 @@ const config = {
 
     'array-bracket-newline': [
       'error',
-      'consistent',
       {
-        // multiline: true,
+        multiline: true,
         minItems: 3,
       }
     ],
