@@ -36,6 +36,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@erozak/eslint-config@workspace:."
   dependencies:
+    "@semantic-release/exec": ^6.0.2
     assert: ^2.0.0
     eslint: ^8.0.0
     husky: ^7.0.2
@@ -471,6 +472,29 @@ __metadata:
   version: 2.2.0
   resolution: "@semantic-release/error@npm:2.2.0"
   checksum: a264a8e16a89e5fcb104ffb2c4339fde3135b90a6d8fe4497a95fe0776a2bf77771d4c702343c47324aefee2e2a2af72f48b5310c84e8a0902fadb631272700f
+  languageName: node
+  linkType: hard
+
+"@semantic-release/error@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@semantic-release/error@npm:3.0.0"
+  checksum: 29c4391ecbefd9ea991f8fdf5ab3ceb9c4830281da56d9dbacd945c476cb86f10c3b55cd4a6597098c0ea3a59f1ec4752132abeea633e15972f49f4704e61d35
+  languageName: node
+  linkType: hard
+
+"@semantic-release/exec@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "@semantic-release/exec@npm:6.0.2"
+  dependencies:
+    "@semantic-release/error": ^3.0.0
+    aggregate-error: ^3.0.0
+    debug: ^4.0.0
+    execa: ^5.0.0
+    lodash: ^4.17.4
+    parse-json: ^5.0.0
+  peerDependencies:
+    semantic-release: ">=18.0.0"
+  checksum: 27b3bfe376af56a111ed26db9aeba52117959c55ef9c741788ccdc79d68b92305a0c9d9a1631a6107b467fb6f5fc8bd7b4091c9da68739b5ff1237b1cef7ad4f
   languageName: node
   linkType: hard
 

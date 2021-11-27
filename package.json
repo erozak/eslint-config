@@ -4,6 +4,7 @@
   "description": "",
   "main": "js-config.js",
   "scripts": {
+    "lint:ci": "eslint",
     "lint": "eslint --cache --fix",
     "test": "node ./tests/test.js"
   },
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/erozak/eslint-config#readme",
   "devDependencies": {
+    "@semantic-release/exec": "^6.0.2",
     "assert": "^2.0.0",
     "eslint": "^8.0.0",
     "husky": "^7.0.2",
