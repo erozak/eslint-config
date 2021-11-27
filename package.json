@@ -4,10 +4,15 @@
   "description": "",
   "main": "js-config.js",
   "scripts": {
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "lint:ci": "eslint",
+    "lint:commit": "commitlint",
     "lint": "eslint --cache --fix",
     "test": "node ./tests/test.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -20,6 +25,9 @@
   },
   "homepage": "https://github.com/erozak/eslint-config#readme",
   "devDependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
+    "@commitlint/format": "^15.0.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.2",
@@ -28,13 +36,20 @@
     "@semantic-release/npm": "^8.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
     "assert": "^2.0.0",
+    "commitizen": "^4.2.4",
     "eslint": "^8.0.0",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "lint-staged": "^11.2.3",
+    "pinst": "^2.0.0",
     "semantic-release": "^17.4.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
   },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
 }

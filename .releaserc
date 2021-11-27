@@ -14,6 +14,10 @@
           {
             "release": "minor",
             "type": "update"
+          },
+          {
+            "release": "minor",
+            "type": "fix"
           }
         ]
       }
