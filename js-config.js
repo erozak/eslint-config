@@ -465,9 +465,9 @@ const config = {
     'no-multiple-empty-lines': [
       'error',
       {
-        max: 2,
-        maxEOF: 1,
-        maxBOF: 1,
+        max: 1,
+        maxEOF: 0,
+        maxBOF: 0,
       },
     ],
     // 'no-tabs': 'off',
