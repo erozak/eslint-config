@@ -8,18 +8,34 @@
       {
         "releaseRules": [
           {
-            "release": "patch",
-            "type": "chore"
+            "release": "major",
+            "type": "new"
           },
           {
-            "release": "patch",
-            "type": "refactor"
+            "release": "minor",
+            "type": "update"
           }
         ]
       }
     ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
     "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "package.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
     "@semantic-release/github",
-    "@semantic-release/exec"
+    "@semantic-release/npm"
   ]
 }

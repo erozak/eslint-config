@@ -1,12 +1,13 @@
 {
   "name": "@erozak/eslint-config",
-  "version": "1.1.1",
+  "version": "0.0.0-semantic-release",
   "description": "",
   "main": "js-config.js",
   "scripts": {
     "lint:ci": "eslint",
     "lint": "eslint --cache --fix",
-    "test": "node ./tests/test.js"
+    "test": "node ./tests/test.js",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,13 @@
   },
   "homepage": "https://github.com/erozak/eslint-config#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "assert": "^2.0.0",
     "eslint": "^8.0.0",
     "husky": "^7.0.2",
