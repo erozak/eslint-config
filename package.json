@@ -4,8 +4,7 @@
   "description": "",
   "main": "js-config.js",
   "scripts": {
-    "test": "node ./tests/test.js",
-    "release": "standard-version"
+    "test": "node ./tests/test.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +20,7 @@
     "assert": "^2.0.0",
     "eslint": "^8.0.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.3",
-    "standard-version": "^9.3.1"
+    "lint-staged": "^11.2.3"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
