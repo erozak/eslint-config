@@ -29,6 +29,10 @@ jobs:
         uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install --immutable
+      - name: Run lints
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: lint:ci
       - name: Run tests
         uses: borales/actions-yarn@v2.3.0
         with:
