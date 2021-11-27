@@ -16,7 +16,7 @@
             "type": "update"
           },
           {
-            "release": "minor",
+            "release": "patch",
             "type": "fix"
           }
         ]
@@ -29,6 +29,8 @@
       }
     ],
     "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
+    "@semantic-release/npm",
     [
       "@semantic-release/git",
       {
@@ -38,8 +40,6 @@
         ],
         "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
-    ],
-    "@semantic-release/github",
-    "@semantic-release/npm"
+    ]
   ]
 }
