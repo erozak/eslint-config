@@ -1,4 +1,6 @@
-{
+const conventionalChangelog = require('./scripts/conventional-changelog');
+
+module.exports = {
   "branches": [
     "main"
   ],
@@ -23,12 +25,18 @@
       }
     ],
     [
+      "@semantic-release/release-notes-generator",
+      {
+        "parserOpts": conventionalChangelog.parserOpts,
+        "writerOpts": conventionalChangelog.writerOpts
+      }
+    ],
+    [
       "@semantic-release/changelog",
       {
         "changelogFile": "CHANGELOG.md"
       }
     ],
-    "@semantic-release/release-notes-generator",
     "@semantic-release/github",
     "@semantic-release/npm",
     [
@@ -38,7 +46,7 @@
           "package.json",
           "CHANGELOG.md"
         ],
-        "message": "chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "chore(release): set package.json to ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ]
   ]
