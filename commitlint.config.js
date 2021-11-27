@@ -39,12 +39,6 @@ module.exports = {
       4,
     ],
   },
-  ignores: [
-    commit => [
-      'a',
-      'amend',
-    ].includes(commit),
-  ],
   prompt: {
     messages: {
       skip: ':skip',
