@@ -20,7 +20,8 @@
     "assert": "^2.0.0",
     "eslint": "^8.0.0",
     "husky": "^7.0.2",
-    "lint-staged": "^11.2.3"
+    "lint-staged": "^11.2.3",
+    "semantic-release": "^17.4.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
