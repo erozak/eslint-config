@@ -9,7 +9,6 @@ const testFiles = [
   '../js-config.js',
 ].map(joinPath);
 
-
 const jsLinter = new eslint.ESLint({
   useEslintrc: false,
   overrideConfig: {

@@ -4,6 +4,7 @@
   "description": "",
   "main": "js-config.js",
   "scripts": {
+    "lint": "eslint --cache --fix",
     "test": "node ./tests/test.js"
   },
   "repository": {
