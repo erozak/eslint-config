@@ -117,7 +117,7 @@ const config = {
     'dot-notation': [
       'error',
       {
-        allowKeywords: false,
+        allowKeywords: true,
       //  allowPattern: '',
       },
     ],
@@ -333,7 +333,7 @@ const config = {
     'function-call-argument-newline': ['error', 'consistent'],
     'function-paren-newline': ['error', 'consistent'],
     'generator-star-spacing': ['error', 'after'],
-    'implicit-arrow-linebreak': ['error', 'beside'],
+    'implicit-arrow-linebreak': 'off',
     indent: [
       'error',
       2,
@@ -347,6 +347,7 @@ const config = {
         },
         FunctionExpression: {
           parameters: 'first',
+          body: 1,
         },
         CallExpression: {
           arguments: 'first',
@@ -410,7 +411,7 @@ const config = {
     'max-len': [
       'error',
       {
-        code: 92,
+        code: 72,
         tabWidth: 2,
         // comments: 92,
         // ignorePattern: '',
@@ -505,6 +506,7 @@ const config = {
       'before',
       {
         overrides: {
+          '=': 'after',
           '&&': 'after',
           '||': 'after',
         },
