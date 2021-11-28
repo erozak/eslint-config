@@ -17,6 +17,7 @@ module.exports = {
         'release',
         'common',
         'js',
+        'ts',
       ],
     ],
     'scope-empty': [
@@ -95,6 +96,9 @@ module.exports = {
         enum: {
           js: {
             description: 'Changes for javascript configuration',
+          },
+          ts: {
+            description: 'Changes for typescript configuration',
           },
           common: {
             description: 'Changes for other files',
