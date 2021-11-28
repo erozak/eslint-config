@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/erozak/eslint-config/compare/v2.1.0...v2.1.1) (2021-11-28)
+
+
+### Bug Fixes
+
+* **ts:** update ts dependencies config ([c1cd504](https://github.com/erozak/eslint-config/commit/c1cd504399d2fcdbe1a1a9fe0b1564db747141d2))
+
 # [2.1.0](https://github.com/erozak/eslint-config/compare/v2.0.0...v2.1.0) (2021-11-28)
 
 # [2.0.0](https://github.com/erozak/eslint-config/compare/v1.4.0...v2.0.0) (2021-11-28)
