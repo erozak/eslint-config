@@ -24,6 +24,10 @@
     "url": "https://github.com/erozak/eslint-config/issues"
   },
   "homepage": "https://github.com/erozak/eslint-config#readme",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/cz-commitlint": "^15.0.0",
@@ -55,9 +59,5 @@
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*"
   }
 }
