@@ -18,7 +18,7 @@ const config = {
     'for-direction': 'error',
     'getter-return': 'error',
     'no-async-promise-executor': 'error',
-    'no-await-in-loop': 'off',
+    // 'no-await-in-loop': 'off',
     'no-class-assign': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
