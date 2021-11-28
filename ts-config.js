@@ -4,7 +4,7 @@
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-  extends: ['./js-config', 'plugin:@typescript-eslint/recommended'],
+  extends: ['plugin:@typescript-eslint/recommended'],
   rules: {
     /**
      * Off js rules

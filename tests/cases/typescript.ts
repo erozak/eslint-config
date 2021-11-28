@@ -4,6 +4,10 @@ enum Enum {
   B = 'C',
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const maxLenTest = () => () => () => () => () => () => () => () => () => () => () =>
+  undefined;
+
 (() => {
   interface Returns {
     a: number;

@@ -411,7 +411,7 @@ const config = {
     'max-len': [
       'error',
       {
-        code: 72,
+        code: 86,
         tabWidth: 2,
         // comments: 92,
         // ignorePattern: '',

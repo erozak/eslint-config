@@ -7,6 +7,7 @@ const joinPath = pathname => path.join(__dirname, pathname);
 const jsLinter = new eslint.ESLint({
   useEslintrc: false,
   overrideConfig: {
+    extends: [joinPath('../js-config.js')],
     parserOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -15,12 +16,12 @@ const jsLinter = new eslint.ESLint({
       node: true,
     },
   },
-  overrideConfigFile: joinPath('../js-config.js'),
 });
 
 const tsLinter = new eslint.ESLint({
   useEslintrc: false,
   overrideConfig: {
+    extends: [joinPath('../js-config.js')],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
     parserOptions: {
@@ -28,11 +29,18 @@ const tsLinter = new eslint.ESLint({
       sourceType: 'module',
       project: [joinPath('../tsconfig.json')],
     },
+    overrides: [
+      {
+        files: ['*.ts'],
+        extends: [joinPath('../ts-config.js')],
+        parser: '@typescript-eslint/parser',
+        plugins: ['@typescript-eslint'],
+      },
+    ],
     env: {
       node: true,
     },
   },
-  overrideConfigFile: joinPath('../ts-config.js'),
 });
 
 /**
