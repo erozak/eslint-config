@@ -42,7 +42,7 @@ module.exports = {
   },
   prompt: {
     messages: {
-      skip: ':skip',
+      skip: '(skip)',
       max: 'upper %d chars',
       min: '%d chars at least',
       emptyWarning: 'can not be empty',
