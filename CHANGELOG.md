@@ -1,3 +1,5 @@
+# [2.1.0](https://github.com/erozak/eslint-config/compare/v2.0.0...v2.1.0) (2021-11-28)
+
 # [2.0.0](https://github.com/erozak/eslint-config/compare/v1.4.0...v2.0.0) (2021-11-28)
 
 # [1.4.0](https://github.com/erozak/eslint-config/compare/v1.3.0...v1.4.0) (2021-11-28)
