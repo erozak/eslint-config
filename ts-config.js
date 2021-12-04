@@ -16,6 +16,7 @@ const config = {
     'no-loss-of-precision': 'off',
     'no-shadow': 'off',
     'no-unused-vars': 'off',
+    'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
     'require-jsdoc': 'off',
     indent: 'off',
@@ -125,6 +126,16 @@ const config = {
       'error',
       {
         allowSingleExtends: true,
+      },
+    ],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        ignoreTypeReferences: true,
+        functions: false,
+        classes: true,
+        variables: true,
+        enums: true,
       },
     ],
     '@typescript-eslint/no-extra-parens': 'error',
