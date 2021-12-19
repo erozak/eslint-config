@@ -19,6 +19,7 @@ const config = {
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
     'require-jsdoc': 'off',
+    camelcase: 'off',
     indent: 'off',
 
     /**
@@ -99,6 +100,31 @@ const config = {
           'TSTypeParameterInstantiation',
           'TSFunctionType > *',
         ],
+      },
+    ],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['strictCamelCase'],
+      },
+      {
+        selector: ['variable', 'classProperty'],
+        modifiers: ['const'],
+        format: ['strictCamelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'variable',
+        modifiers: ['global'],
+        format: null,
+      },
+      {
+        selector: 'enumMember',
+        format: ['UPPER_CASE'],
+      },
+      {
+        selector: 'typeLike',
+        format: ['StrictPascalCase'],
       },
     ],
     '@typescript-eslint/lines-between-class-members': [
