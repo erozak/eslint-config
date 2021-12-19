@@ -62,7 +62,7 @@ const config = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': 'error',
-    'no-unused-vars': 'error',
+    'no-unused-vars': 'warn',
     'no-use-before-define': [
       'error',
       {

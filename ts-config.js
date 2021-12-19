@@ -142,7 +142,7 @@ const config = {
     '@typescript-eslint/no-extra-semi': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-loss-of-precision': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/no-useless-constructor': ['error'],
     '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/no-shadow': 'error',
