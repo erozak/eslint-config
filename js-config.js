@@ -83,8 +83,8 @@ const config = {
     'accessor-pairs': [
       'error',
       {
-        // setWithoutGet: false,
-        getWithoutSet: true,
+        setWithoutGet: true,
+        // getWithoutSet: false,
       },
     ],
     'arrow-body-style': [
