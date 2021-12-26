@@ -96,7 +96,7 @@ const config = {
     ],
     //  'block-scoped-var': 'off',
     camelcase: [
-      'error',
+      'warn',
       {
         // properties: 'always',
         // ignoreDestructuring: false,

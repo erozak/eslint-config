@@ -103,7 +103,7 @@ const config = {
       },
     ],
     '@typescript-eslint/naming-convention': [
-      'error',
+      'warn',
       {
         selector: 'default',
         format: ['strictCamelCase'],
