@@ -707,15 +707,6 @@ const config = {
     // 'unicorn/prefer-code-point': 'error',
     // 'unicorn/prefer-date-now': 'off',
     // 'unicorn/prefer-default-parameters': 'off',
-    'unicorn/prefer-destructuring': ['error',
-    {
-      object: true,
-        /**
-       * NOTE: this should be `false` while 'no-unreadable-array-destructuring' rule is on
-       */
-      array: false,
-      }
-    ],
     // 'unicorn/prefer-dom-node-append': 'off',
     // 'unicorn/prefer-dom-node-dataset': 'off',
     // 'unicorn/prefer-dom-node-remove': 'off',
