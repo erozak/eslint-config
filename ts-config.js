@@ -148,12 +148,7 @@ const config = {
         },
       },
     ],
-    '@typescript-eslint/no-empty-interface': [
-      'error',
-      {
-        allowSingleExtends: true,
-      },
-    ],
+    // '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
