@@ -1,3 +1,11 @@
+# [3.1.0](https://github.com/erozak/eslint-config/compare/v3.0.0...v3.1.0) (2021-12-31)
+
+
+### Bug Fixes
+
+* **js:** fix unicorn rules ([2c707bd](https://github.com/erozak/eslint-config/commit/2c707bdea7fd197f9bdb088a712cc552ca89bf65))
+* **js:** remove unknown rules ([a406c8e](https://github.com/erozak/eslint-config/commit/a406c8e4fe27b077fb92c0abf766295c3268a29c))
+
 # [3.0.0](https://github.com/erozak/eslint-config/compare/v2.6.0...v3.0.0) (2021-12-31)
 
 # [2.6.0](https://github.com/erozak/eslint-config/compare/v2.5.0...v2.6.0) (2021-12-26)
