@@ -605,22 +605,22 @@ const config = {
     /**
      * plugin: Unicorn
      */
-    'better-regex': 'error',
-    'catch-error-name': ['error',
+    'unicorn/better-regex': 'error',
+    'unicorn/catch-error-name': ['error',
       {
       name: 'error',
       ignore: [],
       }
     ],
-    'consistent-destructuring': 'error',
-    // 'consistent-function-scoping': 'off',
-    // 'custom-error-definition': 'off',
-    'empty-brace-spaces': 'error',
-    // 'error-message': 'off'
-    'escape-case': 'error',
-    // 'expiring-todo-comments': 'off',
-    // 'explicit-length-check': 'off',
-    'filename-case': ['error',
+    'unicorn/consistent-destructuring': 'error',
+    // 'unicorn/consistent-function-scoping': 'off',
+    // 'unicorn/custom-error-definition': 'off',
+    'unicorn/empty-brace-spaces': 'error',
+    // 'unicorn/error-message': 'off'
+    'unicorn/escape-case': 'error',
+    // 'unicorn/expiring-todo-comments': 'off',
+    // 'unicorn/explicit-length-check': 'off',
+    'unicorn/filename-case': ['error',
       {
         "cases": {
           "camelCase": true,
@@ -628,8 +628,8 @@ const config = {
         }
       }
     ],
-    'import-index': 'off',
-    'import-style': ['error',
+    'unicorn/import-index': 'off',
+    'unicorn/import-style': ['error',
       {
         "styles": {
           "util": false,
@@ -642,41 +642,41 @@ const config = {
         }
       }
     ],
-    'new-for-builtins': 'error',
-    'no-abusive-eslint-disable': 'error',
-    // 'no-array-callback-reference': 'off',
-    'no-array-for-each': 'error',
-    'no-array-method-this-argument': 'error',
-    // 'no-array-push-push': 'off'
-    // 'no-array-reduce': 'off'
-    'no-await-expression-member': 'error',
-    // 'no-console-spaces': 'off',
-    // 'no-document-cookie': 'off',
-    // 'no-empty-file': 'off',
-    'no-for-loop': 'error',
-    'no-hex-escape': 'error',
-    'no-instanceof-array': 'error',
-    // 'no-invalid-remove-event-listener': 'off',
-    // 'no-keyword-prefix': 'off',
-    // 'no-lonely-if': 'off'
-    // 'no-nested-ternary': 'off',
-    // 'no-new-array': 'off',
-    'no-new-buffer': 'error',
-    // 'no-null': 'off',
-    'no-object-as-default-parameter': 'error',
-    // 'no-process-exit': 'off',
-    // 'no-static-only-class': 'off',
-    'no-this-assignment': 'error',
-    'no-unreadable-array-destructuring': 'error',
-    'no-unsafe-regex': 'error',
-    // 'no-unused-properties': 'off',
-    'no-useless-fallback-in-spread': 'error',
-    'no-useless-length-check': 'error',
-    'no-useless-spread': 'error',
-    'no-useless-undefined': 'error',
-    'no-zero-fractions': 'error',
-    'number-literal-case': 'error',
-    'numeric-separators-style': ['error',
+    'unicorn/new-for-builtins': 'error',
+    'unicorn/no-abusive-eslint-disable': 'error',
+    // 'unicorn/no-array-callback-reference': 'off',
+    'unicorn/no-array-for-each': 'error',
+    'unicorn/no-array-method-this-argument': 'error',
+    // 'unicorn/no-array-push-push': 'off'
+    // 'unicorn/no-array-reduce': 'off'
+    'unicorn/no-await-expression-member': 'error',
+    // 'unicorn/no-console-spaces': 'off',
+    // 'unicorn/no-document-cookie': 'off',
+    // 'unicorn/no-empty-file': 'off',
+    'unicorn/no-for-loop': 'error',
+    'unicorn/no-hex-escape': 'error',
+    'unicorn/no-instanceof-array': 'error',
+    // 'unicorn/no-invalid-remove-event-listener': 'off',
+    // 'unicorn/no-keyword-prefix': 'off',
+    // 'unicorn/no-lonely-if': 'off'
+    // 'unicorn/no-nested-ternary': 'off',
+    // 'unicorn/no-new-array': 'off',
+    'unicorn/no-new-buffer': 'error',
+    // 'unicorn/no-null': 'off',
+    'unicorn/no-object-as-default-parameter': 'error',
+    // 'unicorn/no-process-exit': 'off',
+    // 'unicorn/no-static-only-class': 'off',
+    'unicorn/no-this-assignment': 'error',
+    'unicorn/no-unreadable-array-destructuring': 'error',
+    'unicorn/no-unsafe-regex': 'error',
+    // 'nunicorn/o-unused-properties': 'off',
+    'unicorn/no-useless-fallback-in-spread': 'error',
+    'unicorn/no-useless-length-check': 'error',
+    'unicorn/no-useless-spread': 'error',
+    'unicorn/no-useless-undefined': 'error',
+    'unicorn/no-zero-fractions': 'error',
+    'unicorn/number-literal-case': 'error',
+    'unicorn/numeric-separators-style': ['error',
       {
       onlyIfContainsSeparator: false,
       hexadecimal: {
@@ -697,72 +697,81 @@ const config = {
         }
       }
     ],
-    // 'prefer-add-event-listener': 'off',
-    // 'prefer-array-find': 'off',
-    // 'prefer-array-flat': 'off',
-    // 'prefer-array-flat-map': 'off',
-    // 'prefer-array-index-of': 'off',
-    // 'prefer-array-some': 'off',
-    // 'prefer-at': 'off',
-    // 'prefer-code-point': 'error',
-    // 'prefer-date-now': 'off',
-    // 'prefer-default-parameters': 'off',
-    // 'prefer-dom-node-append': 'off',
-    // 'prefer-dom-node-dataset': 'off',
-    // 'prefer-dom-node-remove': 'off',
-    // 'prefer-dom-node-text-content': 'off',
-    'prefer-export-from': ['error',
+    // 'unicorn/prefer-add-event-listener': 'off',
+    // 'unicorn/prefer-array-find': 'off',
+    // 'unicorn/prefer-array-flat': 'off',
+    // 'unicorn/prefer-array-flat-map': 'off',
+    // 'unicorn/prefer-array-index-of': 'off',
+    // 'unicorn/prefer-array-some': 'off',
+    // 'unicorn/prefer-at': 'off',
+    // 'unicorn/prefer-code-point': 'error',
+    // 'unicorn/prefer-date-now': 'off',
+    // 'unicorn/prefer-default-parameters': 'off',
+    'unicorn/prefer-destructuring': ['error',
+    {
+      object: true,
+        /**
+       * NOTE: this should be `false` while 'no-unreadable-array-destructuring' rule is on
+       */
+      array: false,
+      }
+    ],
+    // 'unicorn/prefer-dom-node-append': 'off',
+    // 'unicorn/prefer-dom-node-dataset': 'off',
+    // 'unicorn/prefer-dom-node-remove': 'off',
+    // 'unicorn/prefer-dom-node-text-content': 'off',
+    'unicorn/prefer-export-from': ['error',
       {
       ignoreUsedVariables: true,
       }
     ],
-    // 'prefer-includes': 'off',
+    // 'unicorn/prefer-includes': 'off',
     /**
      * NOTE: with 'DOM'
      */
-    'prefer-keyboard-event-key': 'error',
-    'prefer-math-trunc': 'error',
+    'unicorn/prefer-keyboard-event-key': 'error',
+    'unicorn/prefer-math-trunc': 'error',
     /**
      * NOTE: with 'DOM'
      */
-    'prefer-math-trunc': 'error',
-    // 'prefer-module': 'off',
-    // 'prefer-negative-index': 'off',
-    'prefer-node-protocol': 'error',
-    'prefer-number-properties': ['error',
+    'unicorn/prefer-math-trunc': 'error',
+    // 'unicorn/prefer-module': 'off',
+    // 'unicorn/prefer-negative-index': 'off',
+    'unicorn/prefer-node-protocol': 'error',
+    'unicorn/prefer-number-properties': ['error',
       {
       checkInfinity: false,
       }
     ],
-    // 'prefer-object-from-entries': 'off',
-    'prefer-object-has-own': 'error',
-    'prefer-optional-catch-binding': 'error',
-    // 'prefer-prototype-methods': 'off',
+    // 'unicorn/prefer-object-from-entries': 'off',
+    'unicorn/prefer-object-has-own': 'error',
+    'unicorn/prefer-optional-catch-binding': 'error',
+    // 'unicorn/prefer-prototype-methods': 'off',
     /**
      * NOTE: with 'DOM'
      */
-    // 'prefer-query-selector': 'off',
-    'prefer-reflect-apply': 'error',
-    // 'prefer-regexp-test': 'off',
-    // 'prefer-set-has': 'off',
-    'prefer-spread': 'error',
-    // 'prefer-string-replace-all': 'off',
-    // 'prefer-string-slice': 'off',
-    // 'prefer-string-starts-ends-with': 'off',
-    'prefer-string-trim-start-end': 'error',
-    // 'prefer-switch': 'off',
-    // 'prefer-ternary': 'off',
-    // 'prefer-top-level-await': 'off',
-    // 'prefer-type-error': 'off',
-    // 'prevent-abbreviations': 'off',
-    // 'require-array-join-separator': 'off',
-    'require-number-to-fixed-digits-argument': 'error',
+    // 'unicorn/prefer-query-selector': 'off',
+    'unicorn/prefer-reflect-apply': 'error',
+    // 'unicorn/prefer-regexp-test': 'off',
+    // 'unicorn/prefer-set-has': 'off',
+    'unicorn/prefer-spread': 'error',
+    // 'unicorn/prefer-string-replace-all': 'off',
+    // 'unicorn/prefer-string-slice': 'off',
+    // 'unicorn/prefer-string-starts-ends-with': 'off',
+    'unicorn/prefer-string-trim-start-end': 'error',
+    // 'unicorn/prefer-switch': 'off',
+    // 'unicorn/prefer-ternary': 'off',
+    // 'unicorn/prefer-top-level-await': 'off',
+    // 'unicorn/prefer-type-error': 'off',
+    // 'unicorn/prevent-abbreviations': 'off',
+    // 'unicorn/require-array-join-separator': 'off',
+    'unicorn/require-number-to-fixed-digits-argument': 'error',
     /**
      * NOTE: with 'DOM'
      */
-    // 'require-post-message-target-origin': 'off',
-    // 'string-content': 'off',
-    'template-indent': ['warn',
+    // 'unicorn/require-post-message-target-origin': 'off',
+    // 'unicorn/string-content': 'off',
+    'unicorn/template-indent': ['warn',
       {
       tags: [
         'outdent',
@@ -783,16 +792,7 @@ const config = {
         ]
       }
     ],
-    'throw-new-error': 'error',
-    'prefer-destructuring': ['error',
-      {
-      object: true,
-        /**
-       * NOTE: this should be `false` while 'no-unreadable-array-destructuring' rule is on
-       */
-      array: false,
-      }
-    ]
+    'unicorn/throw-new-error': 'error',
   },
 };
 
