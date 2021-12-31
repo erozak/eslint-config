@@ -56,7 +56,7 @@ for (const [name, linter, testFiles] of tuples) {
     .lintFiles(testFiles.map(joinPath))
     .then(assertsResults(name))
     .catch(error => {
-      // eslint-disable-next-line
+      // eslint-disable-next-line no-console
       console.error(`Caught some errors while linting:\n${error}`);
     });
 }

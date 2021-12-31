@@ -6,7 +6,7 @@ enum Enum {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const maxLenTest = () => () => () => () => () => () => () => () => () => () => () =>
-  undefined;
+  'undefined';
 
 (() => {
   interface Returns {
