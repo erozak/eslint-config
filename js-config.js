@@ -274,7 +274,12 @@ const config = {
     // 'require-await': 'off',
     // 'require-unicode-regexp': 'off',
     'require-yield': 'error',
-    // 'sort-imports': 'off',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
     // 'sort-keys': 'off',
     // 'sort-vars': 'off',
     // 'spaced-comment': 'off',
