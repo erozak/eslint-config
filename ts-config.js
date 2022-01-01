@@ -106,12 +106,12 @@ const config = {
       'warn',
       {
         selector: 'default',
-        format: ['strictCamelCase'],
+        format: ['camelCase'],
       },
       {
         selector: ['variable', 'classProperty'],
         modifiers: ['const'],
-        format: ['strictCamelCase', 'UPPER_CASE'],
+        format: ['camelCase', 'UPPER_CASE'],
       },
       {
         selector: 'variable',
@@ -124,7 +124,7 @@ const config = {
       },
       {
         selector: 'typeLike',
-        format: ['StrictPascalCase'],
+        format: ['PascalCase'],
       },
     ],
     '@typescript-eslint/lines-between-class-members': [
