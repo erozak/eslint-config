@@ -4,8 +4,8 @@
  * @type {import('eslint').Linter.Config}
  */
 const config = {
-  plugins: ['unicorn'
-  ],
+  plugins: ['unicorn'],
+
   /**
     * @see {@link http://eslint.org/docs/rules/}
     **/
@@ -75,6 +75,7 @@ const config = {
     // 'require-atomic-updates': 'off',
     'use-isnan': 'error',
     'valid-typeof': 'error',
+
     /**
      * Suggestions
      */
@@ -109,8 +110,7 @@ const config = {
     //  'complexity': 'off',
     //  'consistent-return': 'off',
     //  'consistent-this': 'off',
-    curly: ['error', 'multi-line'
-    ],
+    curly: ['error', 'multi-line'],
     'default-case': 'error',
     'default-case-last': 'error',
     //  'default-param-last': 'off',
@@ -243,8 +243,7 @@ const config = {
     'no-void': 'error',
     // 'no-warning-comments': 'off',
     'no-with': 'error',
-    'one-var': ['error', 'never'
-    ],
+    'one-var': ['error', 'never'],
     // 'object-shorthand': 'off',
     // 'one-var-declaration-per-line': 'off',
     // 'operator-assignment': 'off',
@@ -266,9 +265,10 @@ const config = {
     // 'prefer-rest-params': 'off',
     // 'prefer-spread': 'off',
     // 'prefer-template': 'off',
-    'quote-props': ['error', 'as-needed',
-      { keywords: false, numbers: true
-      }
+    'quote-props': [
+      'error',
+      'as-needed',
+      { keywords: false, numbers: true },
     ],
     // 'radix': 'off'
     // 'require-await': 'off',
@@ -286,14 +286,12 @@ const config = {
      * Layout & Formatting
      */
 
-    'array-bracket-newline': ['error',
-      { multiline: true
-      }
+    'array-bracket-newline': [
+      'error',
+      { multiline: true },
     ],
-    'array-bracket-spacing': ['error', 'never'
-    ],
-    'array-element-newline': ['error', 'consistent'
-    ],
+    'array-bracket-spacing': ['error', 'never'],
+    'array-element-newline': ['error', 'consistent'],
     'arrow-parens': [
       'error',
       'as-needed',
@@ -308,8 +306,7 @@ const config = {
         after: true,
       },
     ],
-    'block-spacing': ['error', 'always'
-    ],
+    'block-spacing': ['error', 'always'],
     'brace-style': [
       'error',
       'stroustrup',
@@ -334,22 +331,14 @@ const config = {
         after: true,
       },
     ],
-    'comma-style': ['error', 'last'
-    ],
-    'computed-property-spacing': ['error', 'never'
-    ],
-    'dot-location': ['error', 'property'
-    ],
-    'eol-last': ['off', 'always'
-    ],
-    'func-call-spacing': ['error', 'never'
-    ],
-    'function-call-argument-newline': ['error', 'consistent'
-    ],
-    'function-paren-newline': ['error', 'consistent'
-    ],
-    'generator-star-spacing': ['error', 'after'
-    ],
+    'comma-style': ['error', 'last'],
+    'computed-property-spacing': ['error', 'never'],
+    'dot-location': ['error', 'property'],
+    'eol-last': ['off', 'always'],
+    'func-call-spacing': ['error', 'never'],
+    'function-call-argument-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'consistent'],
+    'generator-star-spacing': ['error', 'after'],
     'implicit-arrow-linebreak': 'off',
     indent: [
       'error',
@@ -378,8 +367,7 @@ const config = {
         ignoredNodes: [],
       },
     ],
-    'jsx-quotes': ['error', 'prefer-double'
-    ],
+    'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': [
       'error',
       {
@@ -401,8 +389,7 @@ const config = {
       },
     ],
     // 'line-comment-position': 'off',
-    'linebreak-style': ['error', 'unix'
-    ],
+    'linebreak-style': ['error', 'unix'],
     'lines-around-comment': [
       'error',
       {
@@ -448,10 +435,8 @@ const config = {
         max: 1,
       },
     ],
-    'multiline-ternary': ['error', 'always-multiline'
-    ],
-    'new-parens': ['error', 'always'
-    ],
+    'multiline-ternary': ['error', 'always-multiline'],
+    'new-parens': ['error', 'always'],
     'newline-per-chained-call': [
       'error',
       {
@@ -500,8 +485,7 @@ const config = {
         // ignoreComments: false,
       },
     ],
-    'no-whitespace-before-property': ['error'
-    ],
+    'no-whitespace-before-property': ['error'],
     // 'nonblock-statement-body-position': 'off',
     'object-curly-newline': [
       'error',
@@ -534,8 +518,7 @@ const config = {
         },
       },
     ],
-    'padded-blocks': ['error', 'never'
-    ],
+    'padded-blocks': ['error', 'never'],
     // 'padding-line-between-statements': 'off',
     quotes: [
       'error',
@@ -545,10 +528,8 @@ const config = {
         allowTemplateLiterals: true,
       },
     ],
-    'rest-spread-spacing': ['error', 'never'
-    ],
-    semi: ['error', 'always'
-    ],
+    'rest-spread-spacing': ['error', 'never'],
+    semi: ['error', 'always'],
     'semi-spacing': [
       'error',
       {
@@ -556,10 +537,8 @@ const config = {
         after: true,
       },
     ],
-    'semi-style': ['error', 'last'
-    ],
-    'space-before-blocks': ['error', 'always'
-    ],
+    'semi-style': ['error', 'last'],
+    'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': [
       'error',
       {
@@ -568,10 +547,8 @@ const config = {
         asyncArrow: 'always',
       },
     ],
-    'space-in-parens': ['error', 'never'
-    ],
-    'space-infix-ops': ['error'
-    ],
+    'space-in-parens': ['error', 'never'],
+    'space-infix-ops': ['error'],
     'space-unary-ops': [
       'error',
       {
@@ -586,12 +563,9 @@ const config = {
         after: true,
       },
     ],
-    'template-curly-spacing': ['error', 'never'
-    ],
-    'template-tag-spacing': ['error', 'never'
-    ],
-    'unicode-bom': ['error', 'never'
-    ],
+    'template-curly-spacing': ['error', 'never'],
+    'template-tag-spacing': ['error', 'never'],
+    'unicode-bom': ['error', 'never'],
     'wrap-iife': [
       'error',
       'inside',
@@ -600,17 +574,18 @@ const config = {
       },
     ],
     'wrap-regex': 'off',
-    'yield-star-spacing': ['error', 'after'
-    ],
+    'yield-star-spacing': ['error', 'after'],
+
     /**
      * plugin: Unicorn
      */
     'unicorn/better-regex': 'error',
-    'unicorn/catch-error-name': ['error',
+    'unicorn/catch-error-name': [
+      'error',
       {
-      name: 'error',
-      ignore: [],
-      }
+        name: 'error',
+        ignore: [],
+      },
     ],
     'unicorn/consistent-destructuring': 'error',
     // 'unicorn/consistent-function-scoping': 'off',
@@ -620,27 +595,29 @@ const config = {
     'unicorn/escape-case': 'error',
     // 'unicorn/expiring-todo-comments': 'off',
     // 'unicorn/explicit-length-check': 'off',
-    'unicorn/filename-case': ['error',
+    'unicorn/filename-case': [
+      'error',
       {
-        "cases": {
-          "camelCase": true,
-          "pascalCase": true
-        }
-      }
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+        },
+      },
     ],
     'unicorn/import-index': 'off',
-    'unicorn/import-style': ['error',
+    'unicorn/import-style': [
+      'error',
       {
-        "styles": {
-          "util": false,
-          "path": {
-          'unassigned': false,
-          'default': false,
-          'namespace': true,
-          'named': true
-          }
-        }
-      }
+        styles: {
+          util: false,
+          path: {
+            unassigned: false,
+            default: false,
+            namespace: true,
+            named: true,
+          },
+        },
+      },
     ],
     'unicorn/new-for-builtins': 'error',
     'unicorn/no-abusive-eslint-disable': 'error',
@@ -678,26 +655,27 @@ const config = {
     // 'unicorn/no-thenable': 'off',
     'unicorn/no-zero-fractions': 'error',
     'unicorn/number-literal-case': 'error',
-    'unicorn/numeric-separators-style': ['error',
+    'unicorn/numeric-separators-style': [
+      'error',
       {
-      onlyIfContainsSeparator: false,
-      hexadecimal: {
-        minimumDigits: 0,
-        groupLength: 2
+        onlyIfContainsSeparator: false,
+        hexadecimal: {
+          minimumDigits: 0,
+          groupLength: 2,
         },
-      binary: {
-        minimumDigits: 0,
-        groupLength: 4
+        binary: {
+          minimumDigits: 0,
+          groupLength: 4,
         },
-      octal: {
-        minimumDigits: 0,
-        groupLength: 4
+        octal: {
+          minimumDigits: 0,
+          groupLength: 4,
         },
-      number: {
-        minimumDigits: 5,
-        groupLength: 3
-        }
-      }
+        number: {
+          minimumDigits: 5,
+          groupLength: 3,
+        },
+      },
     ],
     // 'unicorn/prefer-add-event-listener': 'off',
     // 'unicorn/prefer-array-find': 'off',
@@ -713,29 +691,28 @@ const config = {
     // 'unicorn/prefer-dom-node-dataset': 'off',
     // 'unicorn/prefer-dom-node-remove': 'off',
     // 'unicorn/prefer-dom-node-text-content': 'off',
-    'unicorn/prefer-export-from': ['error',
+    'unicorn/prefer-export-from': [
+      'error',
       {
-      ignoreUsedVariables: true,
-      }
+        ignoreUsedVariables: true,
+      },
     ],
     // 'unicorn/prefer-includes': 'off',
     'unicorn/prefer-json-parse-buffer': 'error',
+
     /**
      * NOTE: with 'DOM'
      */
     'unicorn/prefer-keyboard-event-key': 'error',
     'unicorn/prefer-math-trunc': 'error',
-    /**
-     * NOTE: with 'DOM'
-     */
-    'unicorn/prefer-math-trunc': 'error',
     // 'unicorn/prefer-module': 'off',
     // 'unicorn/prefer-negative-index': 'off',
     'unicorn/prefer-node-protocol': 'error',
-    'unicorn/prefer-number-properties': ['error',
+    'unicorn/prefer-number-properties': [
+      'error',
       {
-      checkInfinity: false,
-      }
+        checkInfinity: false,
+      },
     ],
     // 'unicorn/prefer-object-from-entries': 'off',
     'unicorn/prefer-object-has-own': 'error',
@@ -761,31 +738,33 @@ const config = {
     'unicorn/relative-url-style': ['error', 'never'],
     // 'unicorn/require-array-join-separator': 'off',
     'unicorn/require-number-to-fixed-digits-argument': 'error',
+
     /**
      * NOTE: with 'DOM'
      */
     // 'unicorn/require-post-message-target-origin': 'off',
     // 'unicorn/string-content': 'off',
-    'unicorn/template-indent': ['warn',
+    'unicorn/template-indent': [
+      'warn',
       {
-      tags: [
-        'outdent',
-        'dedent',
-        'gql',
-        'sql',
-        'html',
-        'styled'
+        tags: [
+          'outdent',
+          'dedent',
+          'gql',
+          'sql',
+          'html',
+          'styled',
         ],
-      functions: [
-        'dedent',
-        'stripIndent'
+        functions: [
+          'dedent',
+          'stripIndent',
         ],
-      selectors: [],
-      comments: [
-        'HTML',
-        'indent'
-        ]
-      }
+        selectors: [],
+        comments: [
+          'HTML',
+          'indent',
+        ],
+      },
     ],
     'unicorn/throw-new-error': 'error',
   },

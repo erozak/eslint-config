@@ -12,7 +12,17 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.json'],
   },
-  rules: {},
+  rules: {
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          camelCase: true,
+          kebabCase: true,
+        },
+      },
+    ],
+  },
   env: {
     node: true,
   },
