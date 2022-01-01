@@ -1,3 +1,10 @@
+# [3.3.0](https://github.com/erozak/eslint-config/compare/v3.2.0...v3.3.0) (2022-01-01)
+
+
+### Bug Fixes
+
+* **ts:** fix no-empty-interface ([b13454e](https://github.com/erozak/eslint-config/commit/b13454e9d63a78a42fff204ae1ffa0dca1107604))
+
 # [3.2.0](https://github.com/erozak/eslint-config/compare/v3.1.0...v3.2.0) (2022-01-01)
 
 # [3.1.0](https://github.com/erozak/eslint-config/compare/v3.0.0...v3.1.0) (2021-12-31)
