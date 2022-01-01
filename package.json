@@ -24,10 +24,6 @@
     "url": "https://github.com/erozak/eslint-config/issues"
   },
   "homepage": "https://github.com/erozak/eslint-config#readme",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/cz-commitlint": "^16.0.0",
@@ -44,8 +40,8 @@
     "@typescript-eslint/parser": "^5.8.1",
     "assert": "^2.0.0",
     "commitizen": "^4.2.4",
-    "eslint": "^8.5.0",
-    "eslint-plugin-unicorn": "^39.0.0",
+    "eslint": "^8.6.0",
+    "eslint-plugin-unicorn": "^40.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.4",
     "pinst": "^2.1.6",
@@ -64,7 +60,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
-    "eslint": "^8.5.0",
-    "eslint-plugin-unicorn": "^39.0.0"
+    "eslint": "^8.6.0",
+    "eslint-plugin-unicorn": "^40.0.0"
   }
 }
