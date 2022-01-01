@@ -155,7 +155,7 @@ const config = {
         ignoreTypeReferences: true,
         functions: false,
         classes: true,
-        variables: true,
+        variables: false,
         enums: true,
       },
     ],
