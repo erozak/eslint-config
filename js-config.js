@@ -672,8 +672,10 @@ const config = {
     // 'nunicorn/o-unused-properties': 'off',
     'unicorn/no-useless-fallback-in-spread': 'error',
     'unicorn/no-useless-length-check': 'error',
+    'unicorn/no-useless-promise-resolve-reject': 'error',
     'unicorn/no-useless-spread': 'error',
     'unicorn/no-useless-undefined': 'error',
+    // 'unicorn/no-thenable': 'off',
     'unicorn/no-zero-fractions': 'error',
     'unicorn/number-literal-case': 'error',
     'unicorn/numeric-separators-style': ['error',
@@ -717,6 +719,7 @@ const config = {
       }
     ],
     // 'unicorn/prefer-includes': 'off',
+    'unicorn/prefer-json-parse-buffer': 'error',
     /**
      * NOTE: with 'DOM'
      */
@@ -755,6 +758,7 @@ const config = {
     // 'unicorn/prefer-top-level-await': 'off',
     // 'unicorn/prefer-type-error': 'off',
     // 'unicorn/prevent-abbreviations': 'off',
+    'unicorn/relative-url-style': ['error', 'never'],
     // 'unicorn/require-array-join-separator': 'off',
     'unicorn/require-number-to-fixed-digits-argument': 'error',
     /**
