@@ -255,7 +255,7 @@ const config = {
         // allowUnboundThis: true,
       },
     ],
-    'prefer-const': 'error',
+    'prefer-const': 'warn',
     // 'prefer-destructuring': 'off',
     'prefer-exponentiation-operator': 'error',
     // 'prefer-named-capture-group': 'off',
