@@ -1,5 +1,3 @@
-'use strict';
-
 // This is the internal ESLint config for this project itself.
 
 /**
@@ -13,15 +11,6 @@ module.exports = {
     project: ['./tsconfig.json'],
   },
   rules: {
-    'unicorn/filename-case': [
-      'error',
-      {
-        cases: {
-          camelCase: true,
-          kebabCase: true,
-        },
-      },
-    ],
   },
   env: {
     node: true,
