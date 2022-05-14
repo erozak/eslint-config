@@ -9,7 +9,7 @@
     "postpublish": "pinst --enable",
     "lint:ci": "eslint",
     "lint:commit": "commitlint",
-    "lint": "eslint --cache --fix",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --cache",
     "test": "node ./tests/test.js",
     "semantic-release": "semantic-release",
     "commit": "cz"

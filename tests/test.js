@@ -2,7 +2,7 @@ const path = require('path');
 const assert = require('assert');
 const eslint = require('eslint');
 
-const joinPath = pathname => path.join(__dirname, pathname);
+const joinPath = (pathname) => path.join(__dirname, pathname);
 
 const jsLinter = new eslint.ESLint({
   useEslintrc: false,
@@ -55,7 +55,7 @@ for (const [name, linter, testFiles] of tuples) {
   linter
     .lintFiles(testFiles.map(joinPath))
     .then(assertsResults(name))
-    .catch(error => {
+    .catch((error) => {
       // eslint-disable-next-line no-console
       console.error(`Caught some errors while linting:\n${error}`);
     });
@@ -69,7 +69,7 @@ function assertsResults(name) {
    * @param {import('eslint').ESLint.LintResult[]} results
    * @returns {void}
    */
-  return results => {
+  return (results) => {
     for (const result of results) {
       assert.equal(result.errorCount, 0, `found some lint errors\nwith: ${name}\nin: ${result.filePath}\n${
         result.messages

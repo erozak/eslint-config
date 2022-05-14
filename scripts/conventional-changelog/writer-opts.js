@@ -2,12 +2,10 @@
  * NOTE fork from [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
  */
 
-'use strict';
-
 const compareFunc = require('compare-func');
 const Q = require('q');
 const readFile = Q.denodeify(require('fs').readFile);
-const resolve = require('path').resolve;
+const { resolve } = require('path');
 
 module.exports = Q.all([
   readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
@@ -32,33 +30,26 @@ function getWriterOpts() {
       let discard = true;
       const issues = [];
 
-      commit.notes.forEach(note => {
+      commit.notes.forEach((note) => {
         note.title = 'BREAKING CHANGES';
         discard = false;
       });
 
       if (commit.type === 'new') {
         commit.type = 'New Configuration';
-      }
-      else if (commit.type === 'fix') {
+      } else if (commit.type === 'fix') {
         commit.type = 'Bug Fixes';
-      }
-      else if (commit.type === 'revert' || commit.revert) {
+      } else if (commit.type === 'revert' || commit.revert) {
         commit.type = 'Reverts';
-      }
-      else if (discard) {
+      } else if (discard) {
         return;
-      }
-      else if (commit.type === 'docs') {
+      } else if (commit.type === 'docs') {
         commit.type = 'Documentation';
-      }
-      else if (commit.type === 'update') {
+      } else if (commit.type === 'update') {
         commit.type = 'Configuration Update';
-      }
-      else if (commit.type === 'test') {
+      } else if (commit.type === 'test') {
         commit.type = 'Tests';
-      }
-      else if (commit.type === 'chore') {
+      } else if (commit.type === 'chore') {
         commit.type = 'Chores';
       }
 
@@ -95,7 +86,7 @@ function getWriterOpts() {
       }
 
       // remove references that already appear in the subject
-      commit.references = commit.references.filter(reference => {
+      commit.references = commit.references.filter((reference) => {
         if (issues.indexOf(reference.issue) === -1) {
           return true;
         }

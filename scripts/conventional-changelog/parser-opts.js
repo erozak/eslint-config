@@ -2,8 +2,6 @@
  * NOTE fork from [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
  */
 
-'use strict';
-
 module.exports = {
   headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/,
   headerCorrespondence: [

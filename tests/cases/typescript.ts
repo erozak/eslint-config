@@ -5,8 +5,7 @@ enum Enum {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const maxLenTest = () => () => () => () => () => () => () => () => () => () => () =>
-  'undefined';
+const maxLenTest = () => () => () => () => () => () => () => () => () => () => () => 'undefined';
 
 (() => {
   interface Returns {
@@ -15,23 +14,22 @@ const maxLenTest = () => () => () => () => () => () => () => () => () => () => (
     [key: string]: number;
   }
 
-  const test =
-    (a: number, b: number) =>
-      (c: number) =>
-        (d: number,
-         e: number,
-         f: number) => {
-          const r: Returns = {
-            a,
-            b,
-            c,
-            d,
-            e,
-            f,
-          };
+  const test = (a: number, b: number) => (c: number) => (
+    d: number,
+    e: number,
+    f: number,
+  ) => {
+    const r: Returns = {
+      a,
+      b,
+      c,
+      d,
+      e,
+      f,
+    };
 
-          return r;
-        };
+    return r;
+  };
 
   return test;
 })();
