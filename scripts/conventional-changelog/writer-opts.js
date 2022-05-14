@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable import/no-extraneous-dependencies */
 /**
  * NOTE fork from [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
  */
@@ -30,7 +32,7 @@ function getWriterOpts() {
       let discard = true;
       const issues = [];
 
-      commit.notes.forEach((note) => {
+      commit.notes.forEach(note => {
         note.title = 'BREAKING CHANGES';
         discard = false;
       });
@@ -86,7 +88,7 @@ function getWriterOpts() {
       }
 
       // remove references that already appear in the subject
-      commit.references = commit.references.filter((reference) => {
+      commit.references = commit.references.filter(reference => {
         if (issues.indexOf(reference.issue) === -1) {
           return true;
         }
@@ -94,6 +96,7 @@ function getWriterOpts() {
         return false;
       });
 
+      // eslint-disable-next-line consistent-return
       return commit;
     },
     groupBy: 'type',
