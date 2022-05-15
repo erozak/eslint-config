@@ -3,6 +3,10 @@
   "version": "3.7.0",
   "description": "",
   "main": "js-config.js",
+  "exports": {
+    ".": "./js-config..js",
+    "./typescript": "./ts-config.js"
+  },
   "scripts": {
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
