@@ -1,51 +1,49 @@
 name: Release
-
 on:
   push:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: lts/*
-        registry-url: https://registry.npmjs.org/
-    - name: Get yarn cache directory path
-      id: yarn-cache-dir-path
-      run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
-    - name: Restore Cache
-      uses: actions/cache@v2
-      id: yarn-cache
-      with:
-        path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
-    - name: Install depenedencies
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: install --immutable
-    - name: Lint
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: lint:ci
-    - name: Test
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: test
-    - name: Set up safe directory
-      run: |
-        git config --global --add safe.directory "/github/workspace"
-    - name: Release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: semantic-release --debug
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'lts/*'
+          registry-url: https://registry.npmjs.org/
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn config get cacheFolder)"
+      - name: Restore Cache
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+      - name: Install depenedencies
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install --immutable
+      - name: Lint
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: lint:ci
+      - name: Test
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: test
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: semantic-release
