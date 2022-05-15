@@ -8,6 +8,8 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - name: Work around permission issue
+        run: git config --global --add safe.directory /github/workspace
       - name: Checkout
         uses: actions/checkout@v2
         with:
