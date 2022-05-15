@@ -1,10 +1,10 @@
 const conventionalChangelog = require('./scripts/conventional-changelog');
 
 module.exports = {
-  "branches": [
-    "main"
+  branches: [
+    { name: "main" },
   ],
-  "plugins": [
+  plugins: [
     [
       "@semantic-release/commit-analyzer",
       {
