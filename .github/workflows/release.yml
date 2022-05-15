@@ -39,6 +39,9 @@ jobs:
       uses: borales/actions-yarn@v2.3.0
       with:
         cmd: test
+    - name: Set up safe directory
+      run: |
+        git config --global --add safe.directory "/github/workspace"
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
