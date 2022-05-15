@@ -1,6 +1,7 @@
 const conventionalChangelog = require('./scripts/conventional-changelog');
 
 module.exports = {
+  "debug": true,
   "branches": [
     "main"
   ],
