@@ -1,13 +1,13 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable import/no-extraneous-dependencies */
 /**
  * NOTE fork from [conventional-changelog-angular](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular)
  */
 
-'use strict';
-
 const compareFunc = require('compare-func');
 const Q = require('q');
 const readFile = Q.denodeify(require('fs').readFile);
-const resolve = require('path').resolve;
+const { resolve } = require('path');
 
 module.exports = Q.all([
   readFile(resolve(__dirname, './templates/template.hbs'), 'utf-8'),
@@ -39,26 +39,19 @@ function getWriterOpts() {
 
       if (commit.type === 'new') {
         commit.type = 'New Configuration';
-      }
-      else if (commit.type === 'fix') {
+      } else if (commit.type === 'fix') {
         commit.type = 'Bug Fixes';
-      }
-      else if (commit.type === 'revert' || commit.revert) {
+      } else if (commit.type === 'revert' || commit.revert) {
         commit.type = 'Reverts';
-      }
-      else if (discard) {
+      } else if (discard) {
         return;
-      }
-      else if (commit.type === 'docs') {
+      } else if (commit.type === 'docs') {
         commit.type = 'Documentation';
-      }
-      else if (commit.type === 'update') {
+      } else if (commit.type === 'update') {
         commit.type = 'Configuration Update';
-      }
-      else if (commit.type === 'test') {
+      } else if (commit.type === 'test') {
         commit.type = 'Tests';
-      }
-      else if (commit.type === 'chore') {
+      } else if (commit.type === 'chore') {
         commit.type = 'Chores';
       }
 
@@ -103,6 +96,7 @@ function getWriterOpts() {
         return false;
       });
 
+      // eslint-disable-next-line consistent-return
       return commit;
     },
     groupBy: 'type',
