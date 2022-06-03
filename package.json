@@ -15,7 +15,7 @@
     "lint:commit": "commitlint",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --cache",
     "test": "node ./tests/test.js",
-    "semantic-release": "semantic-release",
+    "semantic-release": "npx semantic-release",
     "commit": "cz"
   },
   "repository": {
