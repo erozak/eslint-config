@@ -1,3 +1,10 @@
+## [3.8.1](https://github.com/erozak/eslint-config/compare/v3.8.0...v3.8.1) (2022-06-13)
+
+
+### Bug Fixes
+
+* **ts:** add import plugin ([d12c54b](https://github.com/erozak/eslint-config/commit/d12c54bde6a3fdcacc48877460183757e783c58d))
+
 # [3.8.0](https://github.com/erozak/eslint-config/compare/v3.7.0...v3.8.0) (2022-06-03)
 
 # [3.7.0](https://github.com/erozak/eslint-config/compare/v3.6.0...v3.7.0) (2022-01-29)
