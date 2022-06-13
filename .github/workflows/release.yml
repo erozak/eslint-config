@@ -24,21 +24,21 @@ jobs:
           node-version: 'lts/*'
           registry-url: https://registry.npmjs.org/
       - name: Install depenedencies
-        uses: borales/actions-yarn@v2.3.0
+        uses: borales/actions-yarn@v3
         with:
           cmd: install --immutable
       - name: Lint
-        uses: borales/actions-yarn@v2.3.0
+        uses: borales/actions-yarn@v3
         with:
           cmd: lint:ci
       - name: Test
-        uses: borales/actions-yarn@v2.3.0
+        uses: borales/actions-yarn@v3
         with:
           cmd: test
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        uses: borales/actions-yarn@v2.3.0
+        uses: borales/actions-yarn@v3
         with:
           cmd: semantic-release --debug
