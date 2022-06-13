@@ -21,17 +21,17 @@ jobs:
       - name: Echo workspace
         run: echo "$GITHUB_WORKSPACE"
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
-          registry-url: https://registry.npmjs.org/
-
-      - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
         id: pnpm-install
         with:
           run_install: false
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
 
       - name: Get pnpm store directory
         id: pnpm-cache
