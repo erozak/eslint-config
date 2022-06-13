@@ -1,5 +1,7 @@
 # eslint-config
 
+[![Release](https://github.com/erozak/eslint-config/actions/workflows/release.yml/badge.svg?branch=main)](https://github.com/erozak/eslint-config/actions/workflows/release.yml)
+
 ## How to install?
 
 ```bash
