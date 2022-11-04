@@ -4,7 +4,7 @@
   "description": "",
   "main": "js-config.js",
   "exports": {
-    ".": "./js-config..js",
+    ".": "./js-config.js",
     "./typescript": "./ts-config.js"
   },
   "scripts": {
