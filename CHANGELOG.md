@@ -1,3 +1,5 @@
+# [3.9.0](https://github.com/erozak/eslint-config/compare/v3.8.1...v3.9.0) (2022-11-26)
+
 ## [3.8.1](https://github.com/erozak/eslint-config/compare/v3.8.0...v3.8.1) (2022-06-13)
 
 
