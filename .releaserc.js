@@ -1,4 +1,4 @@
-const conventionalChangelog = require('./scripts/conventional-changelog');
+const preset = 'conventionalcommits';
 
 module.exports = {
   branches: [
@@ -8,33 +8,19 @@ module.exports = {
     [
       "@semantic-release/commit-analyzer",
       {
-        "releaseRules": [
-          {
-            "release": "major",
-            "type": "new"
-          },
-          {
-            "release": "minor",
-            "type": "update"
-          },
-          {
-            "release": "patch",
-            "type": "fix"
-          }
-        ]
+        preset,
       }
     ],
     [
       "@semantic-release/release-notes-generator",
       {
-        "parserOpts": conventionalChangelog.parserOpts,
-        "writerOpts": conventionalChangelog.writerOpts
+        preset,
       }
     ],
     [
       "@semantic-release/changelog",
       {
-        "changelogFile": "CHANGELOG.md"
+        changelogFile: "CHANGELOG.md"
       }
     ],
     "@semantic-release/github",
@@ -42,11 +28,11 @@ module.exports = {
     [
       "@semantic-release/git",
       {
-        "assets": [
+        assets: [
           "package.json",
           "CHANGELOG.md"
         ],
-        "message": "chore(release): set package.json to ${nextRelease.version}\n\n${nextRelease.notes}"
+        message: "chore(release): set package.json to ${nextRelease.version}\n\n${nextRelease.notes}"
       }
     ]
   ]
