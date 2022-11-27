@@ -6,10 +6,14 @@ module.exports = {
       'always',
       [
         'root',
-        'mixed',
         'js',
         'ts',
       ],
     ],
+  },
+  prompt: {
+    settings: {
+      enableMultipleScopes: true,
+    },
   },
 };
